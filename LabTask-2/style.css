@@ -1,0 +1,14 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cadetblue;
+}
+
+p{
+    color: crimson;
+}
+
+p span{
+    text-transform: uppercase;
+    color: blue;
+    /* if i don't give any color in here,it will present as the color as p */
+}
