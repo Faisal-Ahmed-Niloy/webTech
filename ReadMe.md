@@ -1,4 +1,4 @@
-#Web Tech Lab Practices
+# WebTech Lab Practices
 
 WorkLog:
 ------------------------
