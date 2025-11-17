@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Capitalization</title>
+  <style>
+    body {
+      background: #f3f3f7;
+      font-family: Georgia, serif;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    input {
+      width: 30%;
+      padding: 15px;
+      font-size: 20px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .output-box {
+      width: 30%;
+      padding: 20px;
+      font-size: 20px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Capitalization of 1st Letter of Each Word: </h1>
+  <input
+    type="text"
+    id="inputText"
+    placeholder="Type something..........."
+    onkeyup="capitalizeText()"
+  />
+
+  <h2>Output:</h2>
+  <div class="output-box" id="output"></div>
+
+  <script>
+    function capitalizeText() {
+      let text = document.getElementById("inputText").value;
+      let result = text
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+      document.getElementById("output").innerHTML = result;
+    }
+  </script>
+</body>
+</html>
