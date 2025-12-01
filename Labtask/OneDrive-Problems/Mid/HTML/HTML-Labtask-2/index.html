@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIUB Admission Form</title>
+</head>
+<body>
+    
+    <form action=""><h1>AIUB Admission Form</h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="">Full Name:
+                <input type="text" required><br>
+            </label>
+            <label for="">Email:
+                <input type="email" required><br>
+            </label>
+            <label for="">Gender:
+                <input type="radio" name="Gender" value="Male" required>Male
+                <input type="radio" name="Gender" value="Female" required>Female
+                <input type="radio" name="Gender" value="Others" required>Others
+            </label><br>
+            <label for="">Date of Birth:
+                <input type="date" required>
+            </label>
+        </fieldset>
+
+        <Fieldset>
+            <legend>Academic Information:</legend>
+            <label for="">High School:
+                <input type="text" required>
+            </label>
+            <label for="">HSC GPA:
+                <input type="number" required>
+            </label>
+            <label for="">Preffered Department:
+                <select name="Department" placeholder="select">
+                    <option value="CSE">CSE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="English">English</option>
+                    <option value="law">Law</option>
+                    <option value="architecture">Architecture</option>
+                    <option value="BBA">BBA</option>
+                </select>
+            </label><br>
+            <label for="">Interests:
+                <input type="checkbox" value="AI">AI
+                <input type="checkbox" value="IoT">IoT
+                <input type="checkbox" name="" value="Robotics">Robotics
+                <input type="checkbox" name="" value="Others">Others
+            </label>
+        </Fieldset>
+
+        <fieldset>
+            <legend>Documents</legend>
+            <label for="">Upload Transcript: <input type="file" name=""></label>
+        </fieldset>
+
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+
+</body>
+</html>
